@@ -69,8 +69,8 @@
 )
 
 // 列表与枚举：列表项内不再首行缩进
-#set list(spacing: 0.9em, indent: 2em, body-indent: 0.6em, marker: [•])
-#set enum(numbering: n => numbering("(1)", n), spacing: 1.0em, indent: 2em, body-indent: 0.6em)
+#set list(spacing: 0.9em, indent: 0em, body-indent: 0.6em, marker: [•])
+#set enum(numbering: n => numbering("(1)", n), spacing: 1.0em, indent: 0em, body-indent: 0.6em)
 #show list: set par(first-line-indent: 0em)
 #show enum: set par(first-line-indent: 0em)
 
@@ -395,6 +395,80 @@ $ = pi + [sin x]_0^pi = pi. $
 $ integral_0^1 x e^(-x) dif x = [-x e^(-x)]_0^1 + integral_0^1 e^(-x) dif x $
 
 $ = -e^(-1) + [-e^(-x)]_0^1 = 1 - 2/e. $
+
+=== 练习题
+
+#h(2em)以下练习题覆盖本节的求导公式、求导法则、复合函数求导以及定积分的计算方法，难度由浅入深。
+
++ 求下列函数的导数：
+
+  $ y = x^5, quad y = 3 x^2 - 2 x + 1, quad y = 1/x + sqrt(x). $
+
++ 求 $y = 2^x + log_3 x$ 的导数。
+
++ 求 $y = sin x dot cos x$ 的导数。
+
++ 求 $y = tan x$ 的导数，并说明为什么 $(tan x)' = 1/(cos^2 x)$。
+
++ 求 $y = (x^2 + 1)(x - 2)$ 的导数，分别用乘积法则与先展开再求导两种方法，比较结果。
+
++ 求 $y = (3 x + 1)/(x^2 + 1)$ 的导数。
+
++ 求 $y = arctan x + arcsin x$ 的导数。
+
++ 求 $y = e^x sin x$ 在 $x = 0$ 处的导数值。
+
++ 求 $y = ln(x^2 + 1)$ 的导数。
+
++ 求 $y = e^(3 x)$ 与 $y = sin(2 x)$ 的导数。
+
++ 求 $y = sqrt(x^2 + 1)$ 的导数。
+
++ 求 $y = cos^3 x$ 的导数。
+
++ 求 $y = ln(sin x)$ 的导数，并写出其定义域。
+
++ 求 $y = e^(-x^2\/2)$ 的导数，并求 $y' = 0$ 的点。
+
++ 求 $y = (1 + x^2)^(10)$ 的导数。
+
++ 求 $y = x^2 e^(-x)$ 的导数，并求其极值点。
+
++ 用对数求导法求 $y = x^(sin x)$（$x > 0$）的导数。
+
++ 用对数求导法求 $y = (x + 1)^2 sqrt(x - 1)$（$x > 1$）的导数。
+
++ 求下列定积分：
+
+  $ integral_1^2 (x^2 + 1/x) dif x, quad integral_0^(pi\/2) sin x dif x. $
+
++ 求 $integral_0^1 (e^x + 2^x) dif x$。
+
++ 求 $integral_1^4 (1 + sqrt(x)) dif x$。
+
++ 用换元法求 $integral_0^1 (2 x + 1)^5 dif x$。
+
++ 用换元法求 $integral_0^(pi\/2) sin^3 x cos x dif x$。
+
++ 求 $integral_1^e (ln x)/x dif x$。
+
++ 用分部积分法求 $integral_0^1 x e^(2 x) dif x$。
+
++ 求 $integral_0^(pi\/2) x cos x dif x$。
+
++ 设 $f(x) = x^2 ln x$，求 $f'(1)$。
+
++ 求 $integral_0^1 (dif x)/(1 + x^2)$，并说明其结果 $pi/4$ 的几何意义。
+
++ 用换元法求 $integral_0^1 sqrt(1 - x^2) dif x$（提示：令 $x = sin t$），并与例 2.1.5.3 比较。
+
++ 求 $integral_0^1 x^2 e^x dif x$（提示：连续两次分部积分）。
+
++ 设 $F(x) = integral_0^x e^(-t^2) dif t$，求 $F'(x)$ 与 $F''(x)$。
+
++ 求 $y = x^x$ 在 $x = 1$ 处的切线方程。
+
++ 证明：若 $f(x)$ 在 $[a, b]$ 上连续，则 $integral_a^b f(x) dif x = integral_a^b f(a + b - x) dif x$，并用它计算 $integral_0^pi (x sin x)/(1 + cos^2 x) dif x$。
 
 == 随机变量及其分布
 
